@@ -55,4 +55,5 @@ function promptUser() {
 }
 
 promptUser();
-// need to use
+
+// need to use 'Promise'?

@@ -11,7 +11,7 @@
     <title>Developer Profile Generator HW-8</title>
     <style>
       ${style}
-      .col{
+      .row{
         background: ${color};
       }
     </style>
@@ -19,23 +19,30 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col">
-          test
-        </div>
-        <div class="col">
-          test
+        <div class="col-md-12" id="bio">
+          <img src="${avatar_url}" alt="" />
+          <div>
+            <h1>Hi!</h1>
+            <h2>My name is ${name}</h2>
+            <div class="username"><h3>Username :${username}</h3></div>
+            <!-- For location need to use "location via Google Maps" -->
+            <div class="location"><h3>Current location$: ${location}</h3></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="user-info">
-      <img src="${avatar_url}" alt="" />
-      <div>${name}</div>
-      <div>public_repos : ${public_repos}</div>
-      <div>following : ${following}</div>
-      <div>followers : ${followers}</div>
-      <div class="color">${color}</div>
-      <div class="username">${username}</div>
-      <div class="location">${location}</div>
+      <div class="row2">
+        <div class="user-info">
+          <div class="col-md-6">
+            <div>public_repos : ${public_repos}</div>
+            <div>following : ${following}</div>
+          </div>
+          <div class="col-md-6">
+            <div>followers : ${followers}</div>
+            <!-- instead of color will use stars -->
+            <!-- <div class="color">${color}</div> -->
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
