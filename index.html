@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <title>Developer Profile Generator HW-8</title>
+    <style>
+      ${style}
+      .col{
+        background: ${color};
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          test
+        </div>
+        <div class="col">
+          test
+        </div>
+      </div>
+    </div>
+    <div class="user-info">
+      <img src="${avatar_url}" alt="" />
+      <div>${name}</div>
+      <div>public_repos : ${public_repos}</div>
+      <div>following : ${following}</div>
+      <div>followers : ${followers}</div>
+      <div class="color">${color}</div>
+      <div class="username">${username}</div>
+      <div class="location">${location}</div>
+    </div>
+  </body>
+</html>
