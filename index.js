@@ -24,7 +24,7 @@ function promptUser() {
         // insteat of choice you can type any color
         type: "input",
         name: "color",
-        message: "What is your favorite color?"
+        message: "Enter your favorite color?"
       },
       {
         type: "input",
@@ -66,5 +66,3 @@ function promptUser() {
 }
 
 promptUser();
-
-// need to use 'Promise'?
