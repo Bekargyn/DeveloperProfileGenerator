@@ -23,6 +23,7 @@ function promptUser() {
   inquirer
     .prompt([
       {
+        // insteat of choice you can type any color
         type: "input",
         name: "color",
         message: "What is your favorite color?"
@@ -31,11 +32,6 @@ function promptUser() {
         type: "input",
         name: "username",
         message: "What is your GitHub username?"
-      },
-      {
-        type: "input",
-        name: "location",
-        message: "What is your location?"
       }
     ])
 
@@ -43,12 +39,14 @@ function promptUser() {
       // Make a request for a user with a given ID
       axios
         .get(`https://api.github.com/users/${data.username}`)
+        // .get(`https://api.github.com/users/${data.username}/starred`)
         .then(function(response) {
           data.name = response.data.name;
           data.public_repos = response.data.public_repos;
           data.followers = response.data.followers;
           data.following = response.data.following;
           data.avatar_url = response.data.avatar_url;
+          data.location = response.data.location;
           makePDF(data);
         });
     });
@@ -57,3 +55,13 @@ function promptUser() {
 promptUser();
 
 // need to use 'Promise'?
+
+// ###############
+function init() {
+  const fileHTML = generateHTML();
+  console.log(fileHTML);
+  fs.writeFile("profile.html", fileHTML, function(err) {
+    console.log(err);
+  });
+}
+// init();

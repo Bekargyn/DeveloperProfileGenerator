@@ -24,23 +24,19 @@
           <div>
             <h1>Hi!</h1>
             <h2>My name is ${name}</h2>
-            <div class="username"><h3>Username :${username}</h3></div>
-            <!-- For location need to use "location via Google Maps" -->
-            <div class="location"><h3>Current location$: ${location}</h3></div>
+            <div class="username"><h3>Username: ${username}</h3></div>
+            <div class="location"><h3>Location: ${location}</h3></div>
           </div>
         </div>
       </div>
       <div class="row2">
-        <div class="user-info">
-          <div class="col-md-6">
-            <div>public_repos : ${public_repos}</div>
-            <div>following : ${following}</div>
-          </div>
-          <div class="col-md-6">
-            <div>followers : ${followers}</div>
-            <!-- instead of color will use stars -->
-            <!-- <div class="color">${color}</div> -->
-          </div>
+        <div class="col-md-6">
+          <div>public_repos : ${public_repos}</div>
+          <div>Following : ${following}</div>
+        </div>
+        <div class="col-md-6">
+          <div>Followers : ${followers}</div>
+          <div class="stars">GitHub Stars : ${username}/starred</div>
         </div>
       </div>
     </div>
