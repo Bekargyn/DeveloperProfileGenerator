@@ -11,13 +11,91 @@
     <link rel="stylesheet" href="style.css" />
     <title>Developer Profile Generator HW-8</title>
     <style>
-      ${style}
+      body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  background: #e8eced;
+  height: 100%;
+}
+
+html {
+  zoom: 0.5;
+  background: #e8eced;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+.mainRow .col-12 {
+  margin-bottom: -50px;
+}
+.mainRow {
+  position: relative;
+  background: #869cde;
+  padding: 200px 15px 15px;
+  margin-bottom: 70px;
+}
+
+.avatar {
+  margin-top: -100px;
+  max-width: 50%;
+  border-radius: 50%;
+  border: 10px solid yellow;
+  box-shadow: 5px 5px 24px 0px rgba(0, 0, 0, 0.75);
+}
+
+.bio:empty {
+  display: none;
+  color: black;
+}
+.bio h3 {
+  color: black;
+}
+
+.box {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.box a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+.links a {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 25px;
+}
+
+.links a img {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.info {
+  font-size: 30px;
+}
+
       .box {
-          background: ${color};
+          background: green ;
       }
 
       body, .box a{
-          color: ${textcolor};
+          color: white;
       }
     </style>
   </head>
@@ -26,27 +104,27 @@
       <div class="row mainRow">
         <div class="col-12 text-center ">
           <div class="box">
-            <img class="avatar" src="${avatar_url}" alt="" />
+            <img class="avatar" src="https://avatars1.githubusercontent.com/u/57958566?v=4" alt="" />
             <div>
               <h1>Hi!</h1>
-              <h2>My name is ${name}</h2>
-              <div class="username"><h3>Username: ${username}</h3></div>
-              <div class="location"><h3>Location: ${location}</h3></div>
+              <h2>My name is Bek Abdrakhmanov</h2>
+              <div class="username"><h3>Username: bekargyn</h3></div>
+              <div class="location"><h3>Location: Austin TX</h3></div>
               <div class="links">
-                <a href="https://github.com/${username}">
+                <a href="https://github.com/bekargyn">
                   <img
                     src="https://img.favpng.com/4/20/21/github-computer-icons-icon-design-png-favpng-KaDTwuHWgG8D1qn47QW2hK7Gj.jpg"
                     alt=""
                   />Github</a
                 >
-                <a href="https://www.google.com/maps/place/${location}/">
+                <a href="https://www.google.com/maps/place/Austin TX/">
                   <img
                     width="16"
                     src="https://img.favpng.com/4/20/21/github-computer-icons-icon-design-png-favpng-KaDTwuHWgG8D1qn47QW2hK7Gj.jpg"
                     alt=""
                   />Location</a
                 >
-                <a href="https://github.com/${username}">
+                <a href="https://github.com/bekargyn">
                   <img
                     width="16"
                     src="https://img.favpng.com/4/20/21/github-computer-icons-icon-design-png-favpng-KaDTwuHWgG8D1qn47QW2hK7Gj.jpg"
@@ -61,7 +139,7 @@
       <div class="row text-center my-5 bio">
         <div class="col-12">
           <h3 class="">
-            ${bio}
+            I don't have bios
           </h3>
         </div>
       </div>
@@ -69,21 +147,21 @@
         <div class="col-6">
           <div class="box mb-4">
             Public Repos <br />
-            ${public_repos}
+            9
           </div>
           <div class="box">
             Following <br />
-            ${following}
+            1
           </div>
         </div>
         <div class="col-6">
           <div class="box mb-4">
             Followers <br />
-            ${followers}
+            4
           </div>
           <div class="box">
             GitHub Stars <br />
-            ${starred}
+            0
           </div>
         </div>
       </div>
