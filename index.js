@@ -45,14 +45,13 @@ function promptUser() {
       const request2 = axios.get(
         `https://api.github.com/users/${data.username}/starred`
       );
-      // .get(`https://api.github.com/users/${data.username}/starred`)
 
       axios.all([request1, request2]).then(function(response) {
         data.name = response[0].data.name;
         data.public_repos = response[0].data.public_repos;
         data.bio = response[0].data.bio
           ? response[0].data.bio
-          : "I don't have bios";
+          : "Bio-Information";
         data.followers = response[0].data.followers;
         data.following = response[0].data.following;
         data.avatar_url = response[0].data.avatar_url;
