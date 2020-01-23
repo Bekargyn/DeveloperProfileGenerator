@@ -9,8 +9,7 @@ A PDF is generated that displays the user's GitHub profile picture, name, locati
 
 ## The deployed project should look like this
 
-![deployed1](deployed1.png)
-![alt text](http://url/to/img.png)
+<img src="./deployed1.png" width="100%" height="auto">
 
 ## Links to project repository
 
